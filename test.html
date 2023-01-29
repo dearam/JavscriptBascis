@@ -1,0 +1,48 @@
+<html>
+    <title>Testing</title>
+    <body>
+        <h1>Test survey</h1>
+        <form>
+            <section>
+                <label id="lname">Name : </label><input type="text" placeholder="enter name"/>
+            </section><br/>
+            <section>
+                <label id="lemail">Email : </label><input type="email" placeholder="enter mail"/>
+            </section><br/>
+            <section>
+                <label id="ldateofbirth">DOB : </label><input type="date"/>
+            </section><br/>
+            <section>
+                <label id="lrole">Name : </label>
+                    <div>
+                        <label><input type="radio" name="sradio"/>Ios dev</label>
+                        <label><input type="radio" name="sradio"/>reactjs dev</label>
+                        <label><input type="radio" name="sradio"/>Laravel dev</label>
+                        <label><input type="radio" name="sradio"/>Dataanalysis</label>
+                        <label><input type="radio" name="sradio"/>devops</label>                  
+                    </div>
+            </section><br/>
+            <section>
+                <label id="lskill">Name : </label>
+                    <div>
+                        <label><input type="checkbox" name="scheckbox"/>html</label>
+                        <label><input type="checkbox" name="scheckbox"/>css</label>
+                        <label><input type="checkbox" name="scheckbox"/>javscript</label>
+                        <label><input type="checkbox" name="scheckbox"/>php</label>
+                        <label><input type="checkbox" name="scheckbox"/>reactjs</label>                  
+                    </div>
+            </section><br/>
+            <section>
+                <label id="lpassword">password : </label><input type="password"/>
+            </section>
+            <button type="submit" onclick="tosubmition(event)">Submit</button>
+        </form>
+    </body>
+    <script>
+        function tosubmition(event){
+            event.preventDefault();
+            console.log(event)
+            console.log(event.target.tagName)
+        }
+    </script>
+</html>

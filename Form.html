@@ -1,0 +1,65 @@
+<html>
+    <title>
+        Form page
+    </title>
+    <body>
+        <header>
+            <h1>Servey Form</h1>
+        </header>
+        <article>
+            <form id="myform">
+                <span>
+                    Name :
+                    <input type="text" placeholder="enter name" id="iname"/>
+                </span><br/><br/>
+                <span>
+                    Age (between 18 - 60) :
+                    <input id="rangeinput" type="number" id="iage" min="18" max="60"/>
+                </span><br/><br/>
+                <span>
+                    Date of Birth :
+                    <input type="date" id="idate"/>
+                </span><br/><br/>
+                <span>Gender :
+                    <label for="male"><input type="radio" id="male" name="gender" value="female" id="igender">male</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="female" id="igender">female</label>
+                </span> <br/> <br/>
+                <span>
+                    E-mail :
+                    <input type="email" placeholder="enter mail" id="imail"/>
+                </span><br/><br/>
+                <span id="iskill">
+                    Skills :
+                    <label><input type="checkbox" name="cbox"/>Html</label>
+                    <label><input type="checkbox" name="cbox"/>css</label>
+                    <label><input type="checkbox" name="cbox"/>js</label>
+                    <label><input type="checkbox" name="cbox"/>reactjs</label>
+                    <label><input type="checkbox" name="cbox"/>laravel</label>
+                </span><br/><br/>
+                <span id="irole">
+                    Role :<br/>
+                    <label><input type="radio" name="rrole"/>Php laravel developer</label><br/>
+                    <label><input type="radio" name="rrole"/>Ios developer</label><br/>
+                    <label><input type="radio" name="rrole"/>Reactjs developer</label><br/>
+                    <label><input type="radio" name="rrole"/>Flutter developer</label><br/>
+                    <label><input type="radio" name="rrole"/>Devops</label>
+                </span><br/><br/>
+                <input type="submit" id="isubmit" onclick="toSubmitting(event)"/>
+            </form>
+        </article>
+        <p id="presult"></p>
+    </body>
+    <script>
+        let f=document.getElementById("myform");
+        let r=document.getElementById("presult");
+        function toSubmitting(event){
+            event.preventDefault();
+            let gr=document.getElementsByName("gender");
+            for(let i=0;i<gr.length;i++){
+                if(gr[i].checked){
+                    alert(gr[i].value);
+                }
+            }
+        }
+    </script>
+</html>
