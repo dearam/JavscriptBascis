@@ -2,15 +2,15 @@
     <title>Testing</title>
     <body>
         <h1>Test survey</h1>
-        <form>
+        <form id="mainform" onsubmit="">
             <section>
-                <label id="lname">Name : </label><input type="text" placeholder="enter name"/>
+                <label id="lname">Name : </label><input id="iname" type="text" placeholder="enter name"/>
             </section><br/>
             <section>
-                <label id="lemail">Email : </label><input type="email" placeholder="enter mail"/>
+                <label id="lemail">Email : </label><input id="iemail" type="email" placeholder="enter mail"/>
             </section><br/>
             <section>
-                <label id="ldateofbirth">DOB : </label><input type="date"/>
+                <label id="ldob">DOB : </label><input id="idob" type="date"/>
             </section><br/>
             <section>
                 <label id="lrole">Name : </label>
@@ -33,16 +33,11 @@
                     </div>
             </section><br/>
             <section>
-                <label id="lpassword">password : </label><input type="password"/>
+                <label id="lpassword">password : </label><input id="ipassword" type="password"/>
             </section>
             <button type="submit" onclick="tosubmition(event)">Submit</button>
         </form>
     </body>
-    <script>
-        function tosubmition(event){
-            event.preventDefault();
-            console.log(event)
-            console.log(event.target.tagName)
-        }
+    <script src="testjs.js">
     </script>
 </html>
