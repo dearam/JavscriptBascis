@@ -3,6 +3,11 @@
         Redirected page
     </title>
     <body>
-        hello
+        <p id="para"></p>
     </body>
+    <script>
+        
+        var b=localStorage.getItem("myvalue");
+        document.getElementById("para").innerHTML=b;
+    </script>
 </html>
