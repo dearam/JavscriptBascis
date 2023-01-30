@@ -1,8 +1,13 @@
 <html>
     <title>Testing</title>
+    <style>
+        .pin:focus{
+            outline: none;
+        }
+    </style>
     <body>
         <h1>Test survey</h1>
-        <form id="mainform" onsubmit="">
+        <form id="mainform" onsubmit="submition()">
             <section>
                 <label id="lname">Name : </label><input id="iname" type="text" placeholder="enter name"/>
             </section><br/>
@@ -33,10 +38,32 @@
                     </div>
             </section><br/>
             <section>
-                <label id="lpassword">password : </label><input id="ipassword" type="password"/>
+                <label id="lpassword">password : </label><input onchange="passwordChecking()" onkeyup="pwdvalidation()" class="pin" id="ipassword" type="password"/>
             </section>
-            <button type="submit" onclick="tosubmition(event)">Submit</button>
+            <!-- <button type="submit" onclick="tosubmition(event)">Submit</button> -->
+            <button type="submit" onclick="toSubmitionsamepage(event)">Submit</button>
+            <!-- <input type="submit" id="btnsubmit"/> -->
         </form>
+        <form>
+            <h2></h2>
+            <label id="showname"></label>
+            <label id="showemail"></label>
+            <label id="showrole"></label>
+            <label id="showdob"></label>
+            <label id="showskill"></label>
+        </form>
+        <div id="result">
+            <h2 id="duser"></h2>
+        </div>
+        <!-- <div id="pswd_info">
+            <h4>Password must meet the following requirements:</h4>
+            <ul>
+                <li id="letter" class="invalid">At least <strong>one letter</strong></li>
+                <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
+                <li id="number" class="invalid">At least <strong>one number</strong></li>
+                <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
+            </ul>
+        </div> -->
     </body>
     <script src="testjs.js">
     </script>
