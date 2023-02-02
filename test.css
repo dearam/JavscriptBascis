@@ -1,0 +1,39 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: aliceblue;
+}
+form{
+    height: 90%;
+    width: 40%;
+    background-color: #333;
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+                    rgb(0 0 0 / 73%) 0px 16px 10px -10px ;
+}
+
+.Main-content{
+    padding: 20px;
+    position: relative;
+}
+.titlebar{
+    font-size: 35px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    background-color: #999;
+    color: #000;
+}
+
+input{
+    outline: 0;
+    border: 1.5px solid black;
+}
+#lname{
+    color: black;
+}

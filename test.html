@@ -1,57 +1,66 @@
 <html>
-    <title>Testing</title>
-    <style>
-        .pin:focus{
-            outline: none;
-        }
-    </style>
+    <head>
+        <title>Testing</title>
+        <link rel="stylesheet" href="test.css"/>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
     <body>
-        <h1>Test survey</h1>
-        <form id="mainform" onsubmit="submition()">
-            <section>
-                <label id="lname">Name : </label><input id="iname" type="text" placeholder="enter name"/>
-            </section><br/>
-            <section>
-                <label id="lemail">Email : </label><input id="iemail" type="email" placeholder="enter mail"/>
-            </section><br/>
-            <section>
-                <label id="ldob">DOB : </label><input id="idob" type="date"/>
-            </section><br/>
-            <section>
-                <label id="lrole">Name : </label>
-                    <div>
-                        <label name="olab"><input value="ios dev" type="radio" name="sradio"/>Ios dev</label>
-                        <label name="olab" ><input value="reactjs dev" type="radio" name="sradio"/>reactjs dev</label>
-                        <label name="olab" ><input value="Laravel dev" type="radio" name="sradio"/>Laravel dev</label>
-                        <label name="olab" ><input value="Dataanalysis" type="radio" name="sradio"/>Dataanalysis</label>
-                        <label name="olab" ><input value="devops" type="radio" name="sradio"/>devops</label>                  
-                    </div>
-            </section><br/>
-            <section>
-                <label id="lskill">Name : </label>
-                    <div>
-                        <label><input type="checkbox" value="html" name="scheckbox"/>html</label>
-                        <label><input type="checkbox" value="css" name="scheckbox"/>css</label>
-                        <label><input type="checkbox" value="javscript" name="scheckbox"/>javscript</label>
-                        <label><input type="checkbox" value="php" name="scheckbox"/>php</label>
-                        <label><input type="checkbox" value="reactjs" name="scheckbox"/>reactjs</label>                  
-                    </div>
-            </section><br/>
-            <section>
-                <label id="lpassword">password : </label><input onchange="passwordChecking()" onkeyup="pwdvalidation()" class="pin" id="ipassword" type="password"/>
-            </section>
-            <!-- <button type="submit" onclick="tosubmition(event)">Submit</button> -->
-            <button type="submit" onclick="toSubmitionsamepage(event)">Submit</button>
-            <!-- <input type="submit" id="btnsubmit"/> -->
+        <!-- <form id="mainform" onsubmit="submition()"> -->
+        <form id="mainform" >
+            <div class="titlebar">Test survey</div>
+            <div class="Main-content">
+                <section>
+                    <label id="lname">Name : </label><input id="iname" type="text" placeholder="enter name"/>
+                </section><br/>
+                <section>
+                    <label id="lemail">Email : </label><input id="iemail" type="email" placeholder="enter mail"/>
+                </section><br/>
+                <section>
+                    <label id="ldob">DOB : </label><input id="idob" type="date"/>
+                </section><br/>
+                <section>
+                    <label id="lrole">Role : </label>
+                        <div>
+                            <label name="olab"><input value="ios dev" type="radio" name="sradio"/>Ios dev</label>
+                            <label name="olab" ><input value="reactjs dev" type="radio" name="sradio"/>reactjs dev</label>
+                            <label name="olab" ><input value="Laravel dev" type="radio" name="sradio"/>Laravel dev</label>
+                            <label name="olab" ><input value="Dataanalysis" type="radio" name="sradio"/>Dataanalysis</label>
+                            <label name="olab" ><input value="devops" type="radio" name="sradio"/>devops</label>                  
+                        </div>
+                </section><br/>
+                <section>
+                    <label id="lskill">Skills  : </label>
+                        <div>
+                            <label><input type="checkbox" value="html" name="scheckbox"/>html</label>
+                            <label><input type="checkbox" value="css" name="scheckbox"/>css</label>
+                            <label><input type="checkbox" value="javscript" name="scheckbox"/>javscript</label>
+                            <label><input type="checkbox" value="php" name="scheckbox"/>php</label>
+                            <label><input type="checkbox" value="reactjs" name="scheckbox"/>reactjs</label>                  
+                        </div>
+                </section><br/>
+                <section>
+                    <label id="lpassword">password : </label><input onchange="passwordChecking()" onkeyup="pwdvalidation()" class="pin" id="ipassword" type="password"/>
+                </section><br/>
+                <section>
+                    <label id="lcmts">comments : </label><textarea ></textarea>
+                </section><br/>
+                <section>
+                    <div id="lcmts"><label> the form : <hello id="rvalue"></hello> </label><input type="range" id="irange"/></div>
+                </section><br/>
+                <!-- <button type="submit" onclick="tosubmition(event)">Submit</button> -->
+                <button type="submit" id="submitbtn" >Submit</button>
+                <!-- <button type="submit" id="submitbtn" onclick="toSubmitionsamepage(event)">Submit</button> -->
+                <!-- <input type="submit" id="btnsubmit"/> -->
+            </div>
         </form>
-        <form>
+        <!-- <form>
             <h2></h2>
             <label id="showname"></label>
             <label id="showemail"></label>
             <label id="showrole"></label>
             <label id="showdob"></label>
             <label id="showskill"></label>
-        </form>
+        </form> -->
         <div id="result">
             <h2 id="duser"></h2>
         </div>
@@ -65,6 +74,6 @@
             </ul>
         </div> -->
     </body>
-    <script src="testjs.js">
+    <script src="testjq.js">
     </script>
 </html>
