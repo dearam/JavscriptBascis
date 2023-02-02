@@ -13,6 +13,7 @@ $(document).ready(function(){
         validateSkill();
         validatePassword();
     })
+    
 
     function validateName(){
         if(!($("#iname").val())){
