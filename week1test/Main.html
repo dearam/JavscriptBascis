@@ -1,0 +1,64 @@
+<html>
+    <title>Mainpage</title>
+    <link rel="stylesheet" href="Main.css">
+    <link href="path/to/multiselect.css" media="screen" rel="stylesheet" type="text/css">
+    <body>
+        
+        <div class="title"><h2>Contact us Today!</h2></div>
+        <div class="form-content">
+            <form class="mainform">
+                <div class="input-content">
+                    <h3 class="input-title" id="input-titlefirst">First Name</h3>
+                    <label  class="input-box">
+                        <input id="input-firstname" class="i-box" type="text" placeholder="First Name"/>
+                        <span id="emptyfirst" class="sempty">Please supply your first name</span>
+                        <span id="emptyvalid" class="svalid">Please supply your valid first name</span>
+                    </label>
+                </div>
+
+                <div class="input-content">
+                    <h3 class="input-title" id="input-titlelast">Last Name</h3>
+                    <label class="input-box">
+                        <input id="input-lastname" class="i-box" type="text" placeholder="Last Name"/>
+                        <span id="emptylast" class="semptylast">Please supply your last name</span>
+                        <span id="validlast" class="svalidlast">Please supply your valid last name</span>
+                    </label>
+                </div>
+
+                <div class="input-content">
+                    <h3 class="input-title" id="input-titlemail">E-mail</h3>
+                    <label class="input-box">
+                        <input id="input-mail" class="i-box" type="text" placeholder="E-mail"/>
+                        <span id="emptymail" class="semptymail">Please supply your email </span>
+                        <span id="validmail" class="svalidmail">Please supply your valid email</span>
+                    </label>
+                </div >
+
+                <div class="input-content">
+                    <h3 class="input-title" id="title-number">Phone #</h3>
+                    <label class="input-box">
+                        <input class="i-box" id="input-number" type="number" placeholder="enter mobile number"/>
+                        <span id="emptynumber" class="emptynumber">Please supply your Mobile number</span>
+                        <span id="validnumber" class="svalid">Please supply your valid mobile number</span>
+                    </label>
+                </div>
+
+                <div class="input-content">
+                    <h3 class="input-title" id="title-dob">DOB</h3>
+                    <label class="input-box"><input id="dob-input" class="i-box" type="date"/></label>
+                </div>
+
+
+                <div class="input-content">
+                    <h3 class="input-title" id="address-title">Address</h3><label class="input-box"><textarea id="address-input" placeholder="Enter Address"></textarea></label>
+                </div>
+                <div class="input-content">
+                    <h3 class="input-title" id="profile-title">Profile Image</h3><label><input id="profile-input" type="file"/></label>
+                </div>
+
+                <button type="submit" onclick="formSubmition(event)">Send</button>
+            </form>
+        </div>
+    </body>
+    <script src="Main.js"></script>
+</html>

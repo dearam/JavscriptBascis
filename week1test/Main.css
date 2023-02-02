@@ -1,0 +1,105 @@
+
+.title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+}
+
+.form-content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #999;
+    display: flex;
+    top: 11%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+.mainform{
+    width: 40%;
+}
+.input-title{
+    font-size: 14px;
+    font-style: bold;
+    font-weight: 600;
+    width: 180px;
+    justify-content: flex-end;
+    display: flex;
+}
+.input-content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+}
+.input-box{
+    width: 50%;
+    height: 43px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.input-radio{
+    width: 70%;
+    position: relative;
+    gap: 10px;
+    justify-content:flex-start;
+}
+.separate-radio{
+    width: 15%;
+    position: relative;
+    display: flex;
+    
+}
+input{
+    width: 100%;
+}
+textarea{
+    height: 50px;
+    width: 100%;
+}
+.sempty,
+.semptymail,
+.semptylast,
+.emptynumber{
+    font-size: 10px;
+    bottom: 0;
+    position: absolute;
+    color: red;
+    display: none;
+}
+.svalid,
+.svalidlast,
+.svalidmail,
+.validnumber{
+    font-size: 10px;
+    bottom: 0;
+    position: absolute;
+    color: red;
+    display: none;
+}
+
+
+.i-box{
+    height: 30px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1.5px solid #555;
+}
+button{
+    left: 50%;
+    font-size: 14px;
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+}
